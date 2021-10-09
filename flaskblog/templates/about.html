@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block head %}
+    {{ super() }}
+    <style>
+    body{
+        background-color: #007c4e;
+        color: #000000;
+    }
+
+    a, a:focus, a:hover {
+     color: #090909;
+    }
+
+    .nav-masthead .nav-link {
+     color: rgba(9, 9, 9, 0.5);
+    }
+
+    .masthead-brand {
+     float: none;
+    }
+    .nav-masthead {
+     float: none;
+    }
+
+    </style>
+{% endblock %}
+{% block content %}
+    <img src="static/profile_pics/AboutMe.png" width="200" height="200">
+    <h1> Wanna get to know me? </h1>
+       <br>My name is Sarah Al Mamoun. I'm particularly interested in the web as a platform i can creatively express myself on. <br><br>
+    Advancements in native web technologies, combined with the shared-by-default nature of the internet, foster endless possibilities.<br><br>
+    I have greatly enjoyed exploring this space so far, and there is plenty left to discover. In short, i contain multitudes, yo. <span class="blinking">|</span>
+
+   <p style="font-weight:500;color: #020e1e;">
+    </br>
+    </br>
+     <a href="https://www.linkedin.com/in/sarah-al-mamoun-498128163/" alt="linkedin profile">LinkedIn</a> </br>
+	 <a href="http://www.exedotcom.ca/about-us/" alt="exedotcom about us page" >Exedotcom.ca</a> </br>
+     <a href="https://www.flickr.com/photos/144142705@N06/">Flickr</a></br>
+	 <a href="https://github.com/samamoun/">Github</a>
+    </p>
+{% endblock %}

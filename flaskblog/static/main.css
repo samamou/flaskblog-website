@@ -1,0 +1,188 @@
+body {
+  margin-top: 2rem;
+}
+
+.bg-steel {
+  background-color: #000000;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #1dab2f;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #94d59b;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  background: #1b261b;
+  padding: 30px 60px;
+  border: 1px solid #1dab2f;
+  border-radius: 3px;
+  margin-bottom: 20px;
+
+}
+
+.article-title {
+  color: #1dab2f;
+}
+
+a.article-title:hover {
+  color: #1dab2f;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+  vertical-align: middle;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #1dab2f
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+/* for the blinking
+*  'typing' character
+*/
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000000;    }
+    49%{    color: #1dab2f; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+
+
+/*
+ * Cover
+ */
+
+.btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: #1dab2f;
+}
+
+/* Links */
+a, a:focus, a:hover {
+  color: #1dab2f;
+}
+
+/* Custom default button */
+.btn-secondary, .btn-secondary:hover, .btn-secondary:focus {
+  color: #000000;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #1dab2f;
+  border: .05rem solid #1dab2f;
+}
+
+/*
+ * Base structure
+ */
+h1{
+  font-weight: 600;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #020e1e;
+}
+
+body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: rgba(29, 171, 47, 0.87);
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, 0.5);
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 600;
+  color: #1dab2f;
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: #1dab2f;
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+

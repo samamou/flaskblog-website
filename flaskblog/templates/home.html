@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block head %}
+    {{ super() }}
+    <style>
+    @media (min-width: 48em) {
+    .masthead-brand {
+     float: none;
+    }
+    .nav-masthead {
+     float: none;
+    }
+    }
+    </style>
+{% endblock %}
+{% block content %}
+    <img src="static/profile_pics/main.png" width="200" height="200">
+   <h1 class="cover-heading" style="border-bottom:2px solid rgba(29,171,47,0.46)">The Curious Creations Of Sarah</h1>
+    <p>
+        My writing and web design skills and preferences are as temporary and fickle as every language i know. Please bare with me.
+        <span class="blinking">|</span>
+    </p>
+    <a href="/work" class="btn btn-lg btn-secondary">See Work</a>
+    </br> </br></br> </br>
+
+    <h3 class="cover-heading" style="border-bottom:2px solid rgba(29,171,47,0.46)">Read Recent Posts</h3>
+    </br>
+    {% for post in posts %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ post.author }}</a>
+              <small class="text-muted">{{ post.date_posted }}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+            <p class="article-content">{{ post.content }}</p>
+          </div>
+        </article>
+    {% endfor %}
+
+{% endblock content %}

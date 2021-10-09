@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+{% block title %} Contact Us {% endblock %}
+{% block head %}
+    {{ super() }}
+    <script>
+        function validate() {
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        const regExp_phone = /^\d{3}[- ]\d{3}[- ]\d{4}$/;
+        var validNumber = regExp_phone.test(phone);
+        var message = document.getElementById("message").value;
+        var error_message = document.getElementById("error_message");
+        var text;
+
+        error_message.style.padding = "10px"
+
+        if (email.indexOf("@") == -1 || email.length < 6) {
+            text = "Please Enter valid Email";
+            error_message.innerHTML = text;
+            return false;
+        }
+        if (validNumber === false) {
+            text = "Please Enter valid Phone Number";
+            error_message.innerHTML = text;
+            return false;
+        }
+        if (message.length < 40) {
+            text = "Please Enter a longer message";
+            error_message.innerHTML = text;
+            return false;
+        }
+        alert("Form Submitted Successfully!");
+        return true;
+    }
+    </script>
+    <style>
+    body{
+        background-color: #007c4e;
+        color: #020e1e;
+    }
+    a, a:focus, a:hover {
+     color: #020e1e;
+    }
+
+    .nav-masthead .nav-link {
+     color: rgba(9, 9, 9, 0.5);
+    }
+    #error_message{
+     margin-bottom: 20px;
+     padding: 0px;
+     background: darkgray;
+     border-radius: 5px;
+     text-align: center;
+        font-size: 14px;
+     color: white;
+    transition: all 0.5s ease;
+}
+
+    </style>
+{% endblock %}
+{% block content %}
+    <div class="container contact" >
+        <img src="static/profile_pics/contactt.jpg" width="200" height="200">
+        <h1> Give me a buzz if you're tryna hire me. <span class="blinking">|</span>  </h1>
+    <p>
+      <img src="static/profile_pics/email.png" width="60" height="60">
+        <p>info @ exedotcom.ca  ||  sarahalmamoun @ gmail.com <p>
+      <img  src="static/profile_pics/phone.png" width="40" height="40">
+        <p>CA: +1 514 516 3963 </p>
+    </p>
+    </br>
+    </div>
+<!-- Contact form -->
+<div id="error_message" class="bg-danger"></div>
+  <form id="contact-form" name="contact-form">
+      <h3 >Leave a Message</h3> </br>
+        <label class="form-control-label">Your Email Address </label>
+          <input  type="text" id="email" name="email" placeholder="Your email.." class="form-control form-control-lg">
+      <div>
+      </br>
+          <label for="phone" class="form-control-label"> Your Phone Number </label>
+            <input placeholder="Your phone number.." id="phone" type="text" class="form-control form-control-lg">                                               
+      </div>
+      <div>
+          <label for="text-area" class="form-control-label" style="text-align: center"> Your Message </label>
+          <textarea  id="message" name="Subject" placeholder="Your message.." class="form-control form-control-lg"> Your Message...</textarea>
+      </br>
+      </div>
+      <div>
+                <input onclick="return validate()" id="submit_btn" type="submit" value="Submit" class="btn btn-lg btn-secondary" class="form-control form-control-lg">
+
+      </div>
+
+      </br></br></br></br>
+
+  </form>
+{% endblock content %}
