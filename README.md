@@ -79,9 +79,5 @@ https://youtu.be/cY2NXB_Tqq0/
 I will be adding custom error pages, pagination, reset password/forgot password option, multiple account blog posting ability, accepting and resizing multiple account profile pictures.
 
 
-## Contributions
-Suggestions and contributions are more than welcome.
-
-
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
