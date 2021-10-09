@@ -53,7 +53,7 @@ WTForms==2.1
 ## Project tree 
 Your project should look like this (FYI)
 
-![Screen Shot 2021-10-09 at 4 49 50 PM](https://user-images.githubusercontent.com/46803937/136673436-e30cb1fc-f7ec-48c6-9822-0a727dd6f35e.png)
+<img width="275" alt="Screen Shot 2021-10-09 at 5 33 27 PM" src="https://user-images.githubusercontent.com/46803937/136674243-285f661b-9366-4ed9-9d22-7b7281eea3c2.png">
 
 
 ## Resources and credits 
