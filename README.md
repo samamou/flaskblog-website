@@ -17,7 +17,6 @@ AboutMe & Contact pages in light mode
 <img width="400" alt="Contact" src="https://user-images.githubusercontent.com/46803937/136682861-ae8ae1bd-3e13-4fc0-a0b5-3438d1188b29.png">
 
 
- 
 ## User Login  
 This application includes a user management system that can register the users. Once they are registered they can login, logout, and make small blog updates. 
 <img width="1000" alt="website6" src="https://user-images.githubusercontent.com/46803937/93248514-edb06100-f75d-11ea-9dfc-2db968647eba.png"> <img width="1000" alt="website5" src="https://user-images.githubusercontent.com/46803937/93248512-edb06100-f75d-11ea-9a0e-5f32d9119bb2.png">
