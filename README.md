@@ -3,9 +3,20 @@
 I am creating a Full-Featured Web Application built with the Flask framework in Python 
 for my web development class at **Concordia University**.
 
-## Homepage 
+## Light and dark mode
 I used Bootstrap classes to define the base template. I then extended and redefined the template using Jinja2 template syntax and organized the them into blocks. 
-<img width="1000" alt="website1" src="https://user-images.githubusercontent.com/46803937/93248508-ec7f3400-f75d-11ea-9f9d-5bde9de5abca.png">
+
+Homepage & Work pages in dark mode
+
+<img width="400" alt="homepage" src="https://user-images.githubusercontent.com/46803937/136682858-dd4788af-4104-4ddd-98c7-37e1d817492e.png">
+<img width="400" alt="Work" src="https://user-images.githubusercontent.com/46803937/136682860-96cde166-b223-4d95-bdcf-3c3d9448feee.png">
+
+AboutMe & Contact pages in light mode
+
+<img width="400" alt="AboutMe" src="https://user-images.githubusercontent.com/46803937/136682859-b31aef26-3830-48e7-b546-2468c0e2e332.png">
+<img width="400" alt="Contact" src="https://user-images.githubusercontent.com/46803937/136682861-ae8ae1bd-3e13-4fc0-a0b5-3438d1188b29.png">
+
+
  
 ## User Login  
 This application includes a user management system that can register the users. Once they are registered they can login, logout, and make small blog updates. 
